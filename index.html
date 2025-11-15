@@ -205,7 +205,7 @@
             const jsonObject = {};
             formData.forEach((value, key) => jsonObject[key] = value);
 
-            const webhookUrl = "http://localhost:5678/webhook/soc2-form";
+            const webhookUrl = "http://localhost:5678/webhook-test/soc2-form";
 
             try {
                 const response = await fetch(webhookUrl, {
@@ -223,4 +223,5 @@
 
 </body>
 </html>
+
 
