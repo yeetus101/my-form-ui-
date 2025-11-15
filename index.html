@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Opening Form - SOC2</title>
+    <title>SOC2 Opening Form</title>
 
-    <!-- Bootstrap 5 CDN -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        body {
-            background: #f5f7fa;
-        }
+        body { background: #f5f7fa; }
         .form-card {
             max-width: 850px;
             margin: 40px auto;
@@ -36,7 +34,6 @@
 
         <form id="soc2-form">
 
-            <!-- Company Info -->
             <div class="section-title">Company Information</div>
 
             <div class="mb-3">
@@ -60,110 +57,100 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Company Description (Max 100 words)</label>
+                <label class="form-label">Company Description (max 100 words)</label>
                 <textarea class="form-control" rows="4" name="company_description" maxlength="700"></textarea>
             </div>
 
-            <!-- Stakeholders -->
             <div class="section-title">Stakeholders</div>
 
-            <!-- Helper function style repeated sections -->
+            <!-- Repeated stakeholder groups -->
             <div class="mt-3"><strong>General Counselor</strong></div>
             <div class="row g-3 mb-3">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="gc_name" placeholder="Name">
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="form-control" name="gc_email" placeholder="Email">
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="gc_phone" placeholder="Telephone">
-                </div>
+                <div class="col-md-4"><input class="form-control" name="gc_name" placeholder="Name"></div>
+                <div class="col-md-4"><input class="form-control" name="gc_email" placeholder="Email" type="email"></div>
+                <div class="col-md-4"><input class="form-control" name="gc_phone" placeholder="Telephone"></div>
             </div>
 
             <div class="mt-3"><strong>Compliance Manager</strong></div>
             <div class="row g-3 mb-3">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="cm_name" placeholder="Name">
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="form-control" name="cm_email" placeholder="Email">
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="cm_phone" placeholder="Telephone">
-                </div>
+                <div class="col-md-4"><input class="form-control" name="cm_name" placeholder="Name"></div>
+                <div class="col-md-4"><input class="form-control" name="cm_email" placeholder="Email" type="email"></div>
+                <div class="col-md-4"><input class="form-control" name="cm_phone" placeholder="Telephone"></div>
             </div>
 
             <div class="mt-3"><strong>CISO</strong></div>
             <div class="row g-3 mb-3">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="ciso_name" placeholder="Name">
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="form-control" name="ciso_email" placeholder="Email">
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="ciso_phone" placeholder="Telephone">
-                </div>
+                <div class="col-md-4"><input class="form-control" name="ciso_name" placeholder="Name"></div>
+                <div class="col-md-4"><input class="form-control" name="ciso_email" placeholder="Email" type="email"></div>
+                <div class="col-md-4"><input class="form-control" name="ciso_phone" placeholder="Telephone"></div>
             </div>
 
             <div class="mt-3"><strong>IT Manager</strong></div>
             <div class="row g-3 mb-3">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="it_name" placeholder="Name">
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="form-control" name="it_email" placeholder="Email">
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="it_phone" placeholder="Telephone">
-                </div>
+                <div class="col-md-4"><input class="form-control" name="it_name" placeholder="Name"></div>
+                <div class="col-md-4"><input class="form-control" name="it_email" placeholder="Email" type="email"></div>
+                <div class="col-md-4"><input class="form-control" name="it_phone" placeholder="Telephone"></div>
             </div>
 
             <div class="mt-3"><strong>DevOps</strong></div>
             <div class="row g-3 mb-3">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="devops_name" placeholder="Name">
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="form-control" name="devops_email" placeholder="Email">
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="devops_phone" placeholder="Telephone">
-                </div>
+                <div class="col-md-4"><input class="form-control" name="devops_name" placeholder="Name"></div>
+                <div class="col-md-4"><input class="form-control" name="devops_email" placeholder="Email" type="email"></div>
+                <div class="col-md-4"><input class="form-control" name="devops_phone" placeholder="Telephone"></div>
             </div>
 
             <div class="mt-3"><strong>Development / VP Engineering / VP R&D</strong></div>
             <div class="row g-3 mb-3">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="vpe_name" placeholder="Name">
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="form-control" name="vpe_email" placeholder="Email">
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="vpe_phone" placeholder="Telephone">
-                </div>
+                <div class="col-md-4"><input class="form-control" name="vpe_name" placeholder="Name"></div>
+                <div class="col-md-4"><input class="form-control" name="vpe_email" placeholder="Email" type="email"></div>
+                <div class="col-md-4"><input class="form-control" name="vpe_phone" placeholder="Telephone"></div>
             </div>
 
             <div class="mt-3"><strong>Human Resources</strong></div>
             <div class="row g-3 mb-4">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="hr_name" placeholder="Name">
-                </div>
-                <div class="col-md-4">
-                    <input type="email" class="form-control" name="hr_email" placeholder="Email">
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" name="hr_phone" placeholder="Telephone">
-                </div>
+                <div class="col-md-4"><input class="form-control" name="hr_name" placeholder="Name"></div>
+                <div class="col-md-4"><input class="form-control" name="hr_email" placeholder="Email" type="email"></div>
+                <div class="col-md-4"><input class="form-control" name="hr_phone" placeholder="Telephone"></div>
             </div>
 
             <button class="btn btn-primary w-100 py-2" type="submit">Submit</button>
         </form>
     </div>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Production Webhook Script -->
+    <script>
+        document.getElementById("soc2-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const jsonObject = {};
+
+            formData.forEach((value, key) => {
+                jsonObject[key] = value;
+            });
+
+     
+            const webhookUrl = "http://localhost:5678/webhook/soc2-form";
+
+            try {
+                const response = await fetch(webhookUrl, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(jsonObject)
+                });
+
+                const result = await response.json();
+                alert("Form submitted successfully!");
+            } 
+            catch (err) {
+                alert("Error submitting form: " + err.message);
+            }
+        });
+    </script>
+
 </body>
 </html>
 
